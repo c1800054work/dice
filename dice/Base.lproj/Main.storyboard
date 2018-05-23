@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,103 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="8rH-Xg-N53">
+                                <rect key="frame" x="38" y="125" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-HE-YDj">
+                                <rect key="frame" x="38" y="294" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="1rf-NJ-gCz">
+                                <rect key="frame" x="196" y="451" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="eos-ZH-c0T">
+                                <rect key="frame" x="196" y="294" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-wC-725">
+                                <rect key="frame" x="196" y="125" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="XEu-Lb-ojt">
+                                <rect key="frame" x="38" y="451" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft0-qK-ygG">
+                                <rect key="frame" x="212" y="619" width="108" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="右邊骰子轉轉轉"/>
+                                <connections>
+                                    <action selector="dicesButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keC-Cb-fbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy7-vQ-8Sj">
+                                <rect key="frame" x="54" y="623" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="左邊骰子轉轉轉"/>
+                                <connections>
+                                    <action selector="dicesButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAd-Og-hXj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwz-o0-mka">
+                                <rect key="frame" x="47" y="652" width="122" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">左邊骰子點數和
+0</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-vW-Px9">
+                                <rect key="frame" x="205" y="652" width="122" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">右邊骰子點數和
+0</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPp-EO-Hpb">
+                                <rect key="frame" x="126" y="719" width="122" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">所有骰子點數和
+0</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftButton" destination="Hy7-vQ-8Sj" id="ige-5J-fXq"/>
+                        <outlet property="leftDicesLabel" destination="Nwz-o0-mka" id="DUu-u6-kI6"/>
+                        <outlet property="rightButton" destination="ft0-qK-ygG" id="DOX-V5-2gs"/>
+                        <outlet property="rightDicesLabel" destination="1hA-vW-Px9" id="elJ-X3-eo3"/>
+                        <outlet property="sumDicesLabel" destination="mPp-EO-Hpb" id="N3P-eJ-P5o"/>
+                        <outletCollection property="leftDices" destination="8rH-Xg-N53" collectionClass="NSMutableArray" id="0rV-ve-oxO"/>
+                        <outletCollection property="leftDices" destination="1Yg-HE-YDj" collectionClass="NSMutableArray" id="fe8-Wp-pwZ"/>
+                        <outletCollection property="leftDices" destination="XEu-Lb-ojt" collectionClass="NSMutableArray" id="pXP-8j-MSq"/>
+                        <outletCollection property="rightDices" destination="SQF-wC-725" collectionClass="NSMutableArray" id="wEd-lD-k7V"/>
+                        <outletCollection property="rightDices" destination="eos-ZH-c0T" collectionClass="NSMutableArray" id="Mgh-Ve-Uwv"/>
+                        <outletCollection property="rightDices" destination="1rf-NJ-gCz" collectionClass="NSMutableArray" id="Eck-sJ-ceY"/>
+                        <outletCollection property="leftDices" destination="8rH-Xg-N53" collectionClass="NSMutableArray" id="d4Z-TY-Knb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="one" width="340" height="372"/>
+    </resources>
 </document>
